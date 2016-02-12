@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Mapping DTD Version 1.0//EN"
+                         "http://castor.org/mapping.dtd">
+
+<!--
+    Document   : mapping.xml
+    Created on : July 19, 2009, 12:45 PM
+    Author     : venkatasiva
+    Description:
+        Purpose of the document follows.
+-->
+
+<mapping>
+    <class name="org.smmoney.xml.LineStruct">
+        <map-to xml="LineStruct"/>
+
+        <field name="m_x1"
+           type="java.lang.Double">
+            <bind-xml name="X1" node="attribute"/>
+        </field>
+
+        <field name="m_x2"
+           type="java.lang.Double">
+            <bind-xml name="X2" node="attribute"/>
+        </field>
+
+        <field name="m_y1"
+           type="java.lang.Double">
+            <bind-xml name="Y1" node="attribute"/>
+        </field>
+
+        <field name="m_y2"
+           type="java.lang.Double">
+            <bind-xml name="Y2" node="attribute"/>
+        </field>
+
+        <field name="m_shape"
+           type="java.lang.Enum">
+            <bind-xml name="Shape" node="attribute"/>
+        </field>
+   
+        <field name="m_arcAnnStruct"
+           type="org.smmoney.xml.ArcAnnotationsStruct">
+            <bind-xml name="ArcAnnStruct" node="element"/>
+        </field>
+
+    </class>
+</mapping>

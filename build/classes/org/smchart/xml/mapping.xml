@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Mapping DTD Version 1.0//EN"
+                         "http://castor.org/mapping.dtd">
+
+<!--
+    Document   : mapping.xml
+    Created on : July 19, 2009, 12:45 PM
+    Author     : venkatasiva
+    Description:
+        Purpose of the document follows.
+-->
+
+<mapping>
+    <class name="org.smchart.xml.SMChartSettings">
+        <map-to xml="SMChart"/>
+
+        <field name="m_ticker"
+           type="java.lang.String">
+            <bind-xml name="Ticker" node="attribute"/>
+        </field>
+
+        <field name="m_selectOriginX"
+           type="java.lang.Double">
+            <bind-xml name="OriginX" node="attribute"/>
+        </field>
+
+        <field name="m_selectOriginY"
+           type="java.lang.Double">
+            <bind-xml name="OriginY" node="attribute"/>
+        </field>
+
+        <field name="m_vlower"
+           type="java.lang.Double">
+            <bind-xml name="VLower" node="attribute"/>
+        </field>
+
+        <field name="m_vupper"
+           type="java.lang.Double">
+            <bind-xml name="VUpper" node="attribute"/>
+        </field>
+
+        <field name="m_hupper"
+           type="java.lang.Double">
+            <bind-xml name="HUpper" node="attribute"/>
+        </field>
+
+        <field name="m_hlower"
+           type="java.lang.Double">
+            <bind-xml name="HLower" node="attribute"/>
+        </field>
+
+        <field name="m_screenDataAreaX"
+           type="java.lang.Double">
+            <bind-xml name="ScreenDataX" node="attribute"/>
+        </field>
+
+        <field name="m_screenDataAreaY"
+           type="java.lang.Double">
+            <bind-xml name="ScreenDataY" node="attribute"/>
+        </field>
+
+        <field name="m_screenDataAreaWidth"
+           type="java.lang.Double">
+            <bind-xml name="ScreenDataWidth" node="attribute"/>
+        </field>
+
+        <field name="m_screenDataAreaHeight"
+           type="java.lang.Double">
+            <bind-xml name="ScreenDataHeight" node="attribute"/>
+        </field>
+
+        <field name="screenX"
+           type="java.lang.Double">
+            <bind-xml name="ScreenX" node="attribute"/>
+        </field>
+
+        <field name="screenY"
+           type="java.lang.Double">
+            <bind-xml name="ScreenY" node="attribute"/>
+        </field>
+
+        <field name="m_annotationsList"
+           type="org.smchart.xml.LineStruct"
+              collection="arraylist">
+            <bind-xml name="AnnotationsList"/>
+        </field>
+
+        <field name="m_indList"
+           type="org.smchart.xml.ChartIndicator"
+              collection="arraylist">
+            <bind-xml name="IndicatorList"/>
+        </field>
+    </class>
+
+    <class name="org.smchart.xml.ChartIndicator">
+        <map-to xml="ChartIndicator"/>
+
+        <field name="m_var1"
+           type="java.lang.Double">
+            <bind-xml name="Var1" node="attribute"/>
+        </field>
+
+        <field name="m_var2"
+           type="java.lang.Double">
+            <bind-xml name="Var2" node="attribute"/>
+        </field>
+
+        <field name="m_var3"
+           type="java.lang.Double">
+            <bind-xml name="Var3" node="attribute"/>
+        </field>
+
+        <field name="m_indName"
+           type="java.lang.String">
+            <bind-xml name="IndicatorName" node="attribute"/>
+        </field>
+
+        <field name="m_ticker"
+           type="java.lang.String">
+            <bind-xml name="Ticker" node="attribute"/>
+        </field>
+
+    </class>
+
+    <class name="org.smchart.xml.LineStruct">
+        <map-to xml="LineStruct"/>
+
+        <field name="m_x1"
+           type="java.lang.Double">
+            <bind-xml name="X1" node="attribute"/>
+        </field>
+
+        <field name="m_x2"
+           type="java.lang.Double">
+            <bind-xml name="X2" node="attribute"/>
+        </field>
+
+        <field name="m_y1"
+           type="java.lang.Double">
+            <bind-xml name="Y1" node="attribute"/>
+        </field>
+
+        <field name="m_y2"
+           type="java.lang.Double">
+            <bind-xml name="Y2" node="attribute"/>
+        </field>
+
+        <field name="m_shape"
+           type="java.lang.String">
+            <bind-xml name="Shape" node="attribute"/>
+        </field>
+
+        <field name="m_arcAnnStruct"
+           type="org.smchart.xml.ArcAnnotationsStruct">
+            <bind-xml name="ArcAnnStruct" node="element"/>
+        </field>
+
+    </class>
+
+    <class name="org.smchart.xml.ArcAnnotationsStruct">
+        <map-to xml="ArcAnnotationsStruct"/>
+        <field name="m_arcRadius"
+           type="java.lang.Double">
+            <bind-xml name="ArcRadius" node="attribute"/>
+        </field>
+
+        <field name="m_ArcRadiusOnChart"
+           type="java.lang.Double">
+            <bind-xml name="ArcRadiusOnChart" node="attribute"/>
+        </field>
+
+    </class>
+</mapping>
